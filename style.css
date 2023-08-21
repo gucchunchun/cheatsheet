@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --black: 0,0,0;
+    --item1bg: 255, 0, 0;
+    --item2bg: 0, 255, 0;
+    --item3bg: 0, 0, 255;
+}
+h1 {
+    width: fit-content;
+    margin: 2rem auto;
+}
+.flex-container {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    border: 1px solid rgb(var(--black));
+}
+.flex-item {
+    height: 20vh;
+}
+.item1 {
+    background-color: rgb(var(--item1bg));
+}
+.item2 {
+    background-color: rgb(var(--item2bg));
+}
+.item3 {
+    background-color: rgb(var(--item3bg));
+}
