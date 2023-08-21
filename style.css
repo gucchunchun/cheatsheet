@@ -13,15 +13,22 @@ h1 {
     width: fit-content;
     margin: 2rem auto;
 }
+
 .flex-container {
     display: flex;
     width: 90vw;
-    margin: 0 auto;
-    border: 1px solid rgb(var(--black));
-}
-.flex-item {
     height: 20vh;
+    margin: 2rem auto;
+    border: 1px solid rgb(var(--black));
+    border-radius: 5px;
 }
+.flex-container.column {
+    flex-direction: column;
+} 
+.flex-item {
+    border-radius: 5px;
+}
+
 .item1 {
     background-color: rgb(var(--item1bg));
 }

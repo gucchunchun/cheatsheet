@@ -10,27 +10,28 @@
     <h1>Flex cheatsheet</h1>
     <main>
       <div class="flex-container">
-        <div class="flex-item item1">flex-item1</div>
-        <div class="flex-item item2">flex-item2</div>
-        <div class="flex-item item3">flex-item3</div>
+        <div id="item1row" class="flex-item item1">flex-item1</div>
+        <div id="item2row" class="flex-item item2">flex-item2</div>
+        <div id="item3row" class="flex-item item3">flex-item3</div>
       </div>
       <div class="flex-container column">
-        <div class="flex-item item1">flex-item1</div>
-        <div class="flex-item item2">flex-item2</div>
-        <div class="flex-item item3">flex-item3</div>
+        <div id="item1col" class="flex-item item1">flex-item1</div>
+        <div id="item2col" class="flex-item item2">flex-item2</div>
+        <div id="item3col" class="flex-item item3">flex-item3</div>
       </div>
-      <label for="item1-width">
-        Item1 width/height:
-        <input type="text" name="item1-width" id="item1-width" value="" />
+      <label for="input1">
+        Item1 ratio:
+        <input type="text" name="item1-width" id="input1" value="" />
       </label>
-      <label for="item2-width">
-        Item2 width/height:
-        <input type="text" name="item2-width" id="item2-width" value="" />
+      <label for="input2">
+        Item2 ratio:
+        <input type="text" name="item2-width" id="input2" value="" />
       </label>
-      <label for="item3-width">
-        Item3 width/height:
-        <input type="text" name="item3-width" id="item3-width" value="" />
+      <label for="input3">
+        Item3 ratio:
+        <input type="text" name="item3-width" id="input3" value="" />
       </label>
     </main>
+    <script src="./index.js" defer></script>
   </body>
 </html>
