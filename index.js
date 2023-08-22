@@ -7,14 +7,28 @@ const item3row = document.getElementById('item3row');
 const item1col = document.getElementById('item1col');
 const item2col = document.getElementById('item2col');
 const item3col = document.getElementById('item3col');
-const input1 = document.getElementById('input1');
-const input2 = document.getElementById('input2');
-const input3 = document.getElementById('input3');
+const ratio1 = document.getElementById('ratio1');
+const ratio2 = document.getElementById('ratio2');
+const ratio3 = document.getElementById('ratio3');
+const grow1 = document.getElementById('grow1');
+const grow2 = document.getElementById('grow2');
+const grow3 = document.getElementById('grow3');
+const shrink1 = document.getElementById('shrink1');
+const shrink2 = document.getElementById('shrink2');
+const shrink3 = document.getElementById('shrink3');
 function change_ratio(itemRow, itemCol, ratio) {
     itemRow.style.width = ratio + '%';
     itemCol.style.height = ratio + '%';
 }
-input1 === null || input1 === void 0 ? void 0 : input1.addEventListener('change', (e) => {
+function change_grow(itemRow, itemCol, factor) {
+    itemRow.style.flexGrow = factor;
+    itemCol.style.flexGrow = factor;
+}
+function change_shrink(itemRow, itemCol, factor) {
+    itemRow.style.flexShrink = factor;
+    itemCol.style.flexShrink = factor;
+}
+ratio1 === null || ratio1 === void 0 ? void 0 : ratio1.addEventListener('change', (e) => {
     e.preventDefault();
     if (!e.target || !item1row || !item1col) {
         return;
@@ -22,7 +36,7 @@ input1 === null || input1 === void 0 ? void 0 : input1.addEventListener('change'
     const ratio = e.target.value;
     change_ratio(item1row, item1col, ratio);
 });
-input2 === null || input2 === void 0 ? void 0 : input2.addEventListener('change', (e) => {
+ratio2 === null || ratio2 === void 0 ? void 0 : ratio2.addEventListener('change', (e) => {
     e.preventDefault();
     if (!e.target || !item2row || !item2col) {
         return;
@@ -30,11 +44,59 @@ input2 === null || input2 === void 0 ? void 0 : input2.addEventListener('change'
     const ratio = e.target.value;
     change_ratio(item2row, item2col, ratio);
 });
-input3 === null || input3 === void 0 ? void 0 : input3.addEventListener('change', (e) => {
+ratio3 === null || ratio3 === void 0 ? void 0 : ratio3.addEventListener('change', (e) => {
     e.preventDefault();
     if (!e.target || !item3row || !item3col) {
         return;
     }
     const ratio = e.target.value;
     change_ratio(item3row, item3col, ratio);
+});
+grow1 === null || grow1 === void 0 ? void 0 : grow1.addEventListener('change', (e) => {
+    e.preventDefault();
+    if (!e.target || !item1row || !item1col) {
+        return;
+    }
+    const factor = e.target.value;
+    change_grow(item1row, item1col, factor);
+});
+grow2 === null || grow2 === void 0 ? void 0 : grow2.addEventListener('change', (e) => {
+    e.preventDefault();
+    if (!e.target || !item2row || !item2col) {
+        return;
+    }
+    const factor = e.target.value;
+    change_grow(item2row, item2col, factor);
+});
+grow3 === null || grow3 === void 0 ? void 0 : grow3.addEventListener('change', (e) => {
+    e.preventDefault();
+    if (!e.target || !item3row || !item3col) {
+        return;
+    }
+    const factor = e.target.value;
+    change_grow(item3row, item3col, factor);
+});
+shrink1 === null || shrink1 === void 0 ? void 0 : shrink1.addEventListener('change', (e) => {
+    e.preventDefault();
+    if (!e.target || !item1row || !item1col) {
+        return;
+    }
+    const factor = e.target.value;
+    change_shrink(item1row, item1col, factor);
+});
+shrink2 === null || shrink2 === void 0 ? void 0 : shrink2.addEventListener('change', (e) => {
+    e.preventDefault();
+    if (!e.target || !item2row || !item2col) {
+        return;
+    }
+    const factor = e.target.value;
+    change_shrink(item2row, item2col, factor);
+});
+shrink3 === null || shrink3 === void 0 ? void 0 : shrink3.addEventListener('change', (e) => {
+    e.preventDefault();
+    if (!e.target || !item3row || !item3col) {
+        return;
+    }
+    const factor = e.target.value;
+    change_shrink(item3row, item3col, factor);
 });

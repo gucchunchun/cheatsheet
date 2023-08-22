@@ -49,4 +49,11 @@ h1 {
 #input-container .flex-container.column {
     width: 30%;
     margin: 0;
+    justify-content: space-around;
+}
+#input-container .flex-container.column div {
+    width: 100%;
+}
+#input-container .flex-container.column div input {
+    width: 90%;
 }
