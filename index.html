@@ -27,19 +27,37 @@
           <div>
             <label for="ratio1">
               Item1 ratio:
-              <input type="text" name="item1-width" id="ratio1" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="ratio1"
+                value=""
+                placeholder="default=0%"
+              />
             </label>
           </div>
           <div>
             <label for="grow1">
               Item1 grow:
-              <input type="text" name="item1-width" id="grow1" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="grow1"
+                value=""
+                placeholder="default=1"
+              />
             </label>
           </div>
           <div>
             <label for="shrink1">
               Item1 shrink:
-              <input type="text" name="item1-width" id="shrink1" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="shrink1"
+                value=""
+                placeholder="default=1"
+              />
             </label>
           </div>
         </div>
@@ -47,19 +65,37 @@
           <div>
             <label for="ratio2">
               Item2 ratio:
-              <input type="text" name="item2-width" id="ratio2" value="" />
+              <input
+                type="text"
+                name="item2-width"
+                id="ratio2"
+                value=""
+                placeholder="default=0%"
+              />
             </label>
           </div>
           <div>
             <label for="grow2">
               Item2 grow:
-              <input type="text" name="item1-width" id="grow2" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="grow2"
+                value=""
+                placeholder="default=1"
+              />
             </label>
           </div>
           <div>
             <label for="shrink2">
               Item2 shrink:
-              <input type="text" name="item1-width" id="shrink2" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="shrink2"
+                value=""
+                placeholder="default=1"
+              />
             </label>
           </div>
         </div>
@@ -67,21 +103,203 @@
           <div>
             <label for="ratio3">
               Item3 ratio:
-              <input type="text" name="item3-width" id="ratio3" value="" />
+              <input
+                type="text"
+                name="item3-width"
+                id="ratio3"
+                value=""
+                placeholder="default=0%"
+              />
             </label>
           </div>
           <div>
             <label for="grow3">
               Item2 grow:
-              <input type="text" name="item1-width" id="grow3" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="grow3"
+                value=""
+                placeholder="default=1"
+              />
             </label>
           </div>
           <div>
             <label for="shrink3">
               Item3 shrink:
-              <input type="text" name="item1-width" id="shrink3" value="" />
+              <input
+                type="text"
+                name="item1-width"
+                id="shrink3"
+                value=""
+                placeholder="default=1"
+              />
             </label>
           </div>
+        </div>
+      </div>
+      <div id="align-row-container" class="flex-container">
+        <div class="fixed-row item1">flex-item1</div>
+        <div class="fixed-row item2">flex-item2</div>
+        <div class="fixed-row item3">flex-item3</div>
+      </div>
+      <div id="align-col-container" class="flex-container column">
+        <div class="fixed-col item1">flex-item1</div>
+        <div class="fixed-col item2">flex-item2</div>
+        <div class="fixed-col item3">flex-item3</div>
+      </div>
+      <div id="input-align-container" class="flex-container">
+        <div class="flex-container column">
+          <label for="align-flex-start">
+            <input
+              type="radio"
+              name="align-items"
+              id="align-flex-start"
+              value="flex-start"
+            />
+            flex-start
+          </label>
+          <label for="align-flex-end">
+            <input
+              type="radio"
+              name="align-items"
+              id="align-flex-end"
+              value="flex-end"
+            />
+            flex-end
+          </label>
+          <label for="align-start">
+            <input
+              type="radio"
+              name="align-items"
+              id="align-start"
+              value="start"
+            />
+            start
+          </label>
+          <label for="align-end">
+            <input type="radio" name="align-items" id="align-end" value="end" />
+            end
+          </label>
+          <label for="align-center">
+            <input
+              type="radio"
+              name="align-items"
+              id="align-center"
+              value="center"
+            />
+            center
+          </label>
+          <label for="align-stretch">
+            <input
+              type="radio"
+              name="align-items"
+              id="align-stretch"
+              value="stretch"
+            />
+            stretch
+          </label>
+        </div>
+        <div class="flex-container column">
+          <label for="justify-flex-start">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-flex-start"
+              value="flex-start"
+            />
+            flex-start
+          </label>
+          <label for="justify-flex-end">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-flex-end"
+              value="flex-end"
+            />
+            flex-end
+          </label>
+          <label for="justify-start">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-start"
+              value="start"
+            />
+            start
+          </label>
+          <label for="justify-end">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-end"
+              value="end"
+            />
+            end
+          </label>
+          <label for="justify-center">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-center"
+              value="center"
+            />
+            center
+          </label>
+          <label for="justify-stretch">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-stretch"
+              value="stretch"
+            />
+            stretch
+          </label>
+          <label for="justify-left">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-left"
+              value="left"
+            />
+            left
+          </label>
+          <label for="justify-right">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-right"
+              value="right"
+            />
+            right
+          </label>
+          <label for="justify-space-around">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-space-around"
+              value="space-around"
+            />
+            space-around
+          </label>
+          <label for="justify-space-evenly">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-space-evenly"
+              value="space-evenly"
+            />
+            space-evenly
+          </label>
+          <label for="justify-space-between">
+            <input
+              type="radio"
+              name="justify-contents"
+              id="justify-space-between"
+              value="space-between"
+            />
+            space-between
+          </label>
         </div>
       </div>
     </main>

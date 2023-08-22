@@ -57,3 +57,31 @@ h1 {
 #input-container .flex-container.column div input {
     width: 90%;
 }
+/* #align-row-container {
+    align-items: flex-end;
+} */
+
+.fixed-row {
+    width: 25%;
+}
+.fixed-row.item1 {
+    height: 50%
+}
+.fixed-row.item2 {
+    height: 80%
+}
+.fixed-row.item3 {
+    height: 100%
+}
+.fixed-col {
+    height: 25%;
+}
+.fixed-col.item1 {
+    width: 50%;
+}
+.fixed-col.item2 {
+    width: 80%;
+}
+.fixed-col.item3 {
+    width: 100%;
+}

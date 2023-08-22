@@ -1,6 +1,5 @@
 "use strict";
 // elements
-const flexContainers = document.getElementsByClassName('flex-container');
 const item1row = document.getElementById('item1row');
 const item2row = document.getElementById('item2row');
 const item3row = document.getElementById('item3row');
@@ -16,6 +15,10 @@ const grow3 = document.getElementById('grow3');
 const shrink1 = document.getElementById('shrink1');
 const shrink2 = document.getElementById('shrink2');
 const shrink3 = document.getElementById('shrink3');
+const alignRowC = document.getElementById('align-row-container');
+const alignColC = document.getElementById('align-col-container');
+const alignItems = document.querySelectorAll('input[type="radio"][name="align-items"]');
+const justifyContents = document.querySelectorAll('input[type="radio"][name="justify-contents"]');
 function change_ratio(itemRow, itemCol, ratio) {
     itemRow.style.width = ratio + '%';
     itemCol.style.height = ratio + '%';
@@ -27,6 +30,20 @@ function change_grow(itemRow, itemCol, factor) {
 function change_shrink(itemRow, itemCol, factor) {
     itemRow.style.flexShrink = factor;
     itemCol.style.flexShrink = factor;
+}
+function change_alignItems(value) {
+    if (!alignRowC || !alignColC) {
+        return;
+    }
+    alignRowC.style.alignItems = value;
+    alignColC.style.alignItems = value;
+}
+function change_justifyContents(value) {
+    if (!alignRowC || !alignColC) {
+        return;
+    }
+    alignRowC.style.justifyContent = value;
+    alignColC.style.justifyContent = value;
 }
 ratio1 === null || ratio1 === void 0 ? void 0 : ratio1.addEventListener('change', (e) => {
     e.preventDefault();
@@ -99,4 +116,24 @@ shrink3 === null || shrink3 === void 0 ? void 0 : shrink3.addEventListener('chan
     }
     const factor = e.target.value;
     change_shrink(item3row, item3col, factor);
+});
+alignItems.forEach(item => {
+    const input = item;
+    input.addEventListener('click', () => {
+        if (input.checked) {
+            const selectedValue = input.value;
+            console.log(selectedValue);
+            change_alignItems(selectedValue);
+        }
+    });
+});
+justifyContents.forEach(item => {
+    const input = item;
+    input.addEventListener('click', () => {
+        if (input.checked) {
+            const selectedValue = input.value;
+            console.log(selectedValue);
+            change_justifyContents(selectedValue);
+        }
+    });
 });
