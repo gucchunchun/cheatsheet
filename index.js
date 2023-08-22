@@ -1,5 +1,7 @@
 "use strict";
 // elements
+const rowC = document.getElementById('row-container');
+const colC = document.getElementById('col-container');
 const item1row = document.getElementById('item1row');
 const item2row = document.getElementById('item2row');
 const item3row = document.getElementById('item3row');
@@ -15,8 +17,8 @@ const grow3 = document.getElementById('grow3');
 const shrink1 = document.getElementById('shrink1');
 const shrink2 = document.getElementById('shrink2');
 const shrink3 = document.getElementById('shrink3');
-const alignRowC = document.getElementById('align-row-container');
-const alignColC = document.getElementById('align-col-container');
+const fixedRowC = document.getElementById('fixed-row-container');
+const fixedColC = document.getElementById('fixed-col-container');
 const alignItems = document.querySelectorAll('input[type="radio"][name="align-items"]');
 const justifyContents = document.querySelectorAll('input[type="radio"][name="justify-contents"]');
 function change_ratio(itemRow, itemCol, ratio) {
@@ -32,18 +34,18 @@ function change_shrink(itemRow, itemCol, factor) {
     itemCol.style.flexShrink = factor;
 }
 function change_alignItems(value) {
-    if (!alignRowC || !alignColC) {
+    if (!rowC || !colC) {
         return;
     }
-    alignRowC.style.alignItems = value;
-    alignColC.style.alignItems = value;
+    rowC.style.alignItems = value;
+    colC.style.alignItems = value;
 }
 function change_justifyContents(value) {
-    if (!alignRowC || !alignColC) {
+    if (!rowC || !colC) {
         return;
     }
-    alignRowC.style.justifyContent = value;
-    alignColC.style.justifyContent = value;
+    rowC.style.alignItems = value;
+    colC.style.alignItems = value;
 }
 ratio1 === null || ratio1 === void 0 ? void 0 : ratio1.addEventListener('change', (e) => {
     e.preventDefault();

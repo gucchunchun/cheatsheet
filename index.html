@@ -10,14 +10,14 @@
     <!-- TODO -->
     <!-- make pseudo CSS -->
     <!-- flex-start/end... -->
-    <h1>Flex cheatsheet</h1>
+    <h1 class="title">Flex cheatsheet</h1>
     <main>
-      <div class="flex-container">
+      <div id="row-container" class="flex-container">
         <div id="item1row" class="flex-item item1">flex-item1</div>
         <div id="item2row" class="flex-item item2">flex-item2</div>
         <div id="item3row" class="flex-item item3">flex-item3</div>
       </div>
-      <div class="flex-container column">
+      <div id="col-container" class="flex-container column">
         <div id="item1col" class="flex-item item1">flex-item1</div>
         <div id="item2col" class="flex-item item2">flex-item2</div>
         <div id="item3col" class="flex-item item3">flex-item3</div>
@@ -137,18 +137,6 @@
             </label>
           </div>
         </div>
-      </div>
-      <div id="align-row-container" class="flex-container">
-        <div class="fixed-row item1">flex-item1</div>
-        <div class="fixed-row item2">flex-item2</div>
-        <div class="fixed-row item3">flex-item3</div>
-      </div>
-      <div id="align-col-container" class="flex-container column">
-        <div class="fixed-col item1">flex-item1</div>
-        <div class="fixed-col item2">flex-item2</div>
-        <div class="fixed-col item3">flex-item3</div>
-      </div>
-      <div id="input-align-container" class="flex-container">
         <div class="flex-container column">
           <label for="align-flex-start">
             <input
@@ -196,6 +184,7 @@
               name="align-items"
               id="align-stretch"
               value="stretch"
+              checked
             />
             stretch
           </label>
@@ -252,6 +241,7 @@
               name="justify-contents"
               id="justify-stretch"
               value="stretch"
+              checked
             />
             stretch
           </label>
