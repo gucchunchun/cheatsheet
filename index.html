@@ -19,18 +19,68 @@
         <div id="item2col" class="flex-item item2">flex-item2</div>
         <div id="item3col" class="flex-item item3">flex-item3</div>
       </div>
-      <label for="input1">
-        Item1 ratio:
-        <input type="text" name="item1-width" id="input1" value="" />
-      </label>
-      <label for="input2">
-        Item2 ratio:
-        <input type="text" name="item2-width" id="input2" value="" />
-      </label>
-      <label for="input3">
-        Item3 ratio:
-        <input type="text" name="item3-width" id="input3" value="" />
-      </label>
+      <div id="input-container" class="flex-container">
+        <div class="flex-container column">
+          <div>
+            <label for="ratio1">
+              Item1 ratio:
+              <input type="text" name="item1-width" id="ratio1" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="grow1">
+              Item1 grow:
+              <input type="text" name="item1-width" id="grow1" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="shrink1">
+              Item1 shrink:
+              <input type="text" name="item1-width" id="shrink1" value="" />
+            </label>
+          </div>
+        </div>
+        <div class="flex-container column">
+          <div>
+            <label for="ratio2">
+              Item2 ratio:
+              <input type="text" name="item2-width" id="ratio2" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="grow2">
+              Item2 grow:
+              <input type="text" name="item1-width" id="grow2" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="shrink2">
+              Item2 shrink:
+              <input type="text" name="item1-width" id="shrink2" value="" />
+            </label>
+          </div>
+        </div>
+        <div class="flex-container column">
+          <div>
+            <label for="ratio3">
+              Item3 ratio:
+              <input type="text" name="item3-width" id="ratio3" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="grow3">
+              Item2 grow:
+              <input type="text" name="item1-width" id="grow3" value="" />
+            </label>
+          </div>
+          <div>
+            <label for="shrink3">
+              Item3 shrink:
+              <input type="text" name="item1-width" id="shrink3" value="" />
+            </label>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="./index.js" defer></script>
   </body>

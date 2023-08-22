@@ -6,15 +6,15 @@ const item3row = document.getElementById('item3row');
 const item1col = document.getElementById('item1col');
 const item2col = document.getElementById('item2col');
 const item3col = document.getElementById('item3col');
-const input1 = document.getElementById('input1');
-const input2 = document.getElementById('input2');
-const input3 = document.getElementById('input3');
+const ratio1 = document.getElementById('ratio1');
+const ratio2 = document.getElementById('ratio2');
+const ratio3 = document.getElementById('ratio3');
 
 function change_ratio(itemRow: HTMLElement, itemCol: HTMLElement, ratio: string):void {
     itemRow.style.width = ratio + '%';
     itemCol.style.height = ratio + '%';
 }
-input1?.addEventListener('change',(e)=>{
+ratio1?.addEventListener('change',(e)=>{
     e.preventDefault();
     if( !e.target || !item1row || !item1col ){
         return;
@@ -22,7 +22,7 @@ input1?.addEventListener('change',(e)=>{
     const ratio = ( e.target as HTMLInputElement ).value;
     change_ratio(item1row, item1col, ratio);
 })
-input2?.addEventListener('change',(e)=>{
+ratio2?.addEventListener('change',(e)=>{
     e.preventDefault();
     if( !e.target || !item2row || !item2col ){
         return;
@@ -30,8 +30,8 @@ input2?.addEventListener('change',(e)=>{
     const ratio = ( e.target as HTMLInputElement ).value;
     change_ratio(item2row, item2col, ratio);
 })
-input3?.addEventListener('change',(e)=>{
-    e.preventDefault();
+ratio3?.addEventListener('change',(e)=>{
+    e.preventDefault(); 
     if( !e.target || !item3row || !item3col ){
         return;
     }

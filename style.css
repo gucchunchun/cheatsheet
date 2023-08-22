@@ -27,8 +27,10 @@ h1 {
 } 
 .flex-item {
     border-radius: 5px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
 }
-
 .item1 {
     background-color: rgb(var(--item1bg));
 }
@@ -37,4 +39,14 @@ h1 {
 }
 .item3 {
     background-color: rgb(var(--item3bg));
+}
+#input-container {
+    height: fit-content;
+    border: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#input-container .flex-container.column {
+    width: 30%;
+    margin: 0;
 }
