@@ -7,6 +7,7 @@ const item3row = document.getElementById('item3row');
 const item1col = document.getElementById('item1col');
 const item2col = document.getElementById('item2col');
 const item3col = document.getElementById('item3col');
+const items = document.querySelectorAll('.flex-item')
 const ratio1 = document.getElementById('ratio1');
 const ratio2 = document.getElementById('ratio2');
 const ratio3 = document.getElementById('ratio3');

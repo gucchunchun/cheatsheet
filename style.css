@@ -33,12 +33,15 @@ h1.title {
 }
 .item1 {
     background-color: rgb(var(--item1bg));
+    font-size: 1rem;
 }
 .item2 {
     background-color: rgb(var(--item2bg));
+    font-size:1.5rem;
 }
 .item3 {
     background-color: rgb(var(--item3bg));
+    font-size:2rem;
 }
 #input-container {
     height: fit-content;
